@@ -247,7 +247,7 @@ section {
 /* bookshelf styles */
 #bookshelf {
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem;  
 }
 .bookshelf__container {
   grid-area: bookshelf;
