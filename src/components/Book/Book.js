@@ -49,15 +49,3 @@ const Book = ({
 };
 
 export default Book;
-
-// const Book = ({ style, textColor, title, onEnter, onLeave, clicked, children }) => {
-//   return (
-//     <div
-//       className="Book"
-//       style={style}
-//       onMouseEnter={() => onEnter(title)}
-//       onMouseLeave={() => onLeave(null)}
-//       onClick={() => clicked(title)} >{title.slice(0, 23)}{title.length > 23 ? '...' : null}
-//     </div>
-//   )
-// }

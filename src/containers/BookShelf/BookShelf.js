@@ -171,11 +171,9 @@ class BookShelf extends React.Component {
                 wrapperStyles={{
                   width: `${(book.pages * 100) / totalPages}%`,
                   height: this.checkHeight(book.format),
-                  // backgroundColor: book.backgroundColor,
-                  // backgroundColor: "palewhite",
                 }}
                 coverStyles={{
-                  backgroundImage: `url('/assets/book-covers/${book.cover}')`,
+                  backgroundImage: `url('assets/book-covers/${book.cover}')`,
                   backgroundSize: "cover",
                   height: this.checkHeight(book.format),
                 }}
