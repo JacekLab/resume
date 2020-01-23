@@ -1,0 +1,72 @@
+.BookShelf {
+  display: flex;
+  /* justify-content: center; */
+  align-items: flex-end;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 3.5rem;
+  margin-top: 1.7rem;
+  position: relative;
+  height: 210px;
+}
+
+.BookShelfBottom {
+  height: 10px;
+  width: 100%;
+  background-color: rgb(104, 104, 104);
+  /* box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6); */
+}
+
+@media (max-width: 320px) {
+  .BookShelf {
+    /* padding: 0 1rem; */
+  }
+}
+
+@media (min-width: 500px) {
+  .BookShelf {
+    /* padding: 0 2rem; */
+  }
+}
+
+@media (min-width: 650px) {
+  .BookShelf {
+    /* padding: 0 3rem; */
+  }
+}
+
+.ShelfButton {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  background-color: var(--sec-col);
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+  z-index: 2000;
+}
+
+.ShelfButton:hover {
+  background-color: var(--sec-col-light);
+  transform: rotate(360deg);
+}
+
+.ShelfButton:active {
+  background-color: var(--sec-col-dark);
+} 
+
+.Previous {
+  position: absolute;
+  bottom: 5rem;
+  left: .3rem;
+}
+
+.Next {
+  position: absolute;
+  bottom: 5rem;
+  right: .3rem;
+}

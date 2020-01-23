@@ -1,0 +1,74 @@
+.BookClicked {
+  font-size: 1rem;
+  padding: 1.5rem;
+  margin: 3rem 1rem 1rem;
+  /* width: 100%; */
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: .3rem .3rem black;
+}
+
+.BookClicked p {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.BookImgAndMainDetails__wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.CloseBook {
+  position: absolute;
+  display: initial;
+  top: -.5rem;
+  right: -.5rem;
+}
+
+.MainDetails {
+  position: relative;
+  width: 100%;
+}
+
+.MainDetails > p > span,
+.MoreDetails > p > span {
+  color: black;
+  background-color: rgb(226, 211, 228);
+}
+
+.BookImgWrapper {
+  height: 10rem;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+  margin-right: 2rem;
+}
+
+.BookImgWrapper > img {
+  height: 100%;
+  width: auto;
+}
+
+.MoreDetails {
+  margin-top: 2rem;
+}
+
+.MoreDetailsSetOne {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 650px) {
+
+}
+
+
+@media (max-width: 380px) {
+  .BookClicked {
+    margin: 0 .2rem;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0.3rem 0.3rem black;
+    position: absolute;
+    top: 9rem;
+    z-index: 2000;
+    }
+}

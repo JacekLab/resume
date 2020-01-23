@@ -1,0 +1,62 @@
+.BookWrapper {
+  overflow: hidden;
+  border: 1px solid #a29cad;
+  border-bottom: 1px solid rgb(104, 104, 104);
+  margin-bottom: -1px;
+  margin-left: -1px;
+  cursor: pointer;
+  border-radius: 3px 3px 0 0;
+  position: relative;
+  background-color: var(--main-col);
+  opacity: 0.8;
+}
+
+.Book {
+  opacity: 0.2;
+  width: 100%;
+}
+
+.BookTitle {
+  color: var(--light-font);
+  font-weight: normal;
+  font-family: 'Comfortaa', cursive;
+  text-transform: uppercase;
+  font-size: .7rem;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  /* left: 5px; */
+}
+
+
+
+/* .Book > div {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  transform-origin: center;
+  position: absolute;
+  width: 100%;
+
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+} */
+
+
+
+/* .BookInvisible {
+  opacity: 0;
+  transition: opacity 3s ease-out;
+  transform: translateX(-100vw);
+}
+
+.BookAppear {
+  opacity: 1;
+  transition: opacity 3s ease-out;
+  transform: translateX(0)
+} */
