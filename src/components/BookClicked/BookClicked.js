@@ -39,7 +39,7 @@ const BookClicked = ({ book, clicked }) => {
       <div className="BookImgAndMainDetails__wrapper">
         <div className="BookImgWrapper">
           <img 
-            src={`/assets/book-covers/${book.cover}`} 
+            src={`assets/book-covers/${book.cover}`} 
             alt={`Cover of a "${book.title}"`} 
           />
         </div>
