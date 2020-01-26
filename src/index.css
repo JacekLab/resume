@@ -4,10 +4,12 @@ html {
 
 :root {
   --main-col: #124586;
+  --main-col-light: #64a6fd;
   --sec-col: #0b9da9; 
   --sec-col-dark: #01656e; 
   --sec-col-light: #5cc1ca; 
   --light-font: #fff5d9;
+  --light-grey: rgb(200,200,200);
 }
 
 body {
@@ -68,9 +70,36 @@ section {
   padding: 0;
 }
 
+/* SCROLLBAR */
+body::-webkit-scrollbar-track,
+.BookClicked::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar,
+.BookClicked::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb,
+.BookClicked::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--sec-col-dark);
+  /* background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.15, var(--main-col)),
+    color-stop(0.75, var(--sec-col))
+  ); */
+}
+
 .resume-head__container {
   background-image: linear-gradient(90deg,var(--main-col),var(--sec-col));
-  /* background-color: rgb(24, 24, 24); */
   color: white;
 }
 
@@ -142,14 +171,14 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  /* gap: 10px; */
   gap: 2.3rem 1.7rem;
 
   grid-template-areas: 
   "technologies technologies"
   "work work"
   "education courses"
-  "bookshelf personalia";
+  "personalia personalia"
+  "bookshelf bookshelf";
 }
 
 .work {
@@ -328,7 +357,7 @@ section {
     margin-top: 2rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 1rem;
+    gap: 2rem 1rem;
   
     grid-template-areas: 
     "work technologies"
@@ -408,16 +437,16 @@ section {
   .resume-body {
     margin-top: 2rem;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    grid-template-rows: 1fr;
+    gap: 1.7rem;
   
     grid-template-areas: 
-    "work"
     "technologies"
-    "personalia"
+    "work"
     "education"
     "courses"
-    "interests";
+    "personalia"
+    "bookshelf";
   }
 }
 

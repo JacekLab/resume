@@ -1,11 +1,13 @@
 .BookClicked {
   font-size: 1rem;
   padding: 1.5rem;
-  margin: 3rem 1rem 1rem;
-  /* width: 100%; */
+  margin: 2rem auto 1rem;
+  height: 300px;
+  max-height: 300px;
+  overflow-y: auto;
   background-color: white;
-  border: 1px solid black;
-  box-shadow: .3rem .3rem black;
+  border: 1px solid var(--light-grey);
+  box-shadow: -.3rem .3rem var(--light-grey);
 }
 
 .BookClicked p {
@@ -21,8 +23,9 @@
 .CloseBook {
   position: absolute;
   display: initial;
-  top: -.5rem;
-  right: -.5rem;
+  top: -1rem;
+  right: -1rem;
+  opacity: .7;
 }
 
 .MainDetails {
@@ -33,12 +36,21 @@
 .MainDetails > p > span,
 .MoreDetails > p > span {
   color: black;
-  background-color: rgb(226, 211, 228);
+  background-color: var(--light-font);
+}
+
+.MainDetails > p:last-child {
+  margin-top: .7rem;
+}
+
+.MainDetails > p:last-child > span {
+  background-color: transparent;
 }
 
 .BookImgWrapper {
   height: 10rem;
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgb(220, 220, 220);
   margin-right: 2rem;
 }
 
@@ -56,19 +68,19 @@
   justify-content: space-between;
 }
 
-@media (max-width: 650px) {
-
-}
-
-
-@media (max-width: 380px) {
+@media (max-width: 660px) {
   .BookClicked {
-    margin: 0 .2rem;
-    background-color: white;
-    border: 1px solid black;
-    box-shadow: 0.3rem 0.3rem black;
     position: absolute;
-    top: 9rem;
+    top: 0;
     z-index: 2000;
-    }
+  }
+  .BookImgWrapper {
+    height: 9rem;
+  }
+  .MoreDetails {
+    margin-top: 1rem;
+  }
+  .BookClicked {
+    margin-top: 0;
+  }
 }
