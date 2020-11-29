@@ -1,0 +1,21 @@
+.Header__container {
+  background-image: linear-gradient(90deg, var(--main-col), var(--sec-col));
+  color: white;
+}
+
+.Header {
+  display: grid;
+  grid-template-columns: 2fr 4fr 4fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  grid-template-areas: "photo about main-info";
+
+  padding: 3rem 0;
+}
+
+.Header a {
+  color: white;
+}
+.Header a:hover {
+  color: #c8eaf8;
+}

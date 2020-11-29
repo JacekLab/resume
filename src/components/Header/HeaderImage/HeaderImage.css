@@ -1,0 +1,15 @@
+.Header-image {
+  grid-area: photo;
+}
+.Header-image__container {
+  border-radius: 50%;
+  background-color: white;
+  overflow: hidden;
+  width: 8rem;
+  height: 8rem;
+}
+
+.Header-image__container > img {
+  width: 100%;
+  height: auto;
+}
