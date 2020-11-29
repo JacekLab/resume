@@ -5,11 +5,11 @@ html {
 :root {
   --main-col: #124586;
   --main-col-light: #64a6fd;
-  --sec-col: #0b9da9; 
-  --sec-col-dark: #01656e; 
-  --sec-col-light: #5cc1ca; 
+  --sec-col: #0b9da9;
+  --sec-col-dark: #01656e;
+  --sec-col-light: #5cc1ca;
   --light-font: #fff5d9;
-  --light-grey: rgb(200,200,200);
+  --light-grey: rgb(200, 200, 200);
 }
 
 body {
@@ -18,13 +18,15 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: "Ubuntu Mono", monospace;
   line-height: 1.2;
 }
 
-h1, h2, h3 {
-  margin: 0 0 .7rem;
-  font-family: 'Comfortaa', cursive;
+h1,
+h2,
+h3 {
+  margin: 0 0 0.7rem;
+  font-family: "Comfortaa", cursive;
   font-weight: normal;
   color: var(--sec-col);
 }
@@ -40,14 +42,14 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
-  margin-bottom: .2rem;
+  margin-bottom: 0.2rem;
   font-weight: 600;
   color: black;
 }
 
 p {
-  margin: 0 0 .5rem;
-} 
+  margin: 0 0 0.5rem;
+}
 
 ul {
   padding: 0;
@@ -57,7 +59,7 @@ ul {
 }
 
 li {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 section {
@@ -73,33 +75,26 @@ section {
 /* SCROLLBAR */
 body::-webkit-scrollbar-track,
 .BookClicked::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  background-color: #F5F5F5;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
   border-radius: 10px;
 }
 
 body::-webkit-scrollbar,
 .BookClicked::-webkit-scrollbar {
   width: 10px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 body::-webkit-scrollbar-thumb,
 .BookClicked::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: var(--sec-col-dark);
-  /* background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.15, var(--main-col)),
-    color-stop(0.75, var(--sec-col))
-  ); */
 }
 
 .resume-head__container {
-  background-image: linear-gradient(90deg,var(--main-col),var(--sec-col));
+  background-image: linear-gradient(90deg, var(--main-col), var(--sec-col));
   color: white;
 }
 
@@ -142,7 +137,7 @@ body::-webkit-scrollbar-thumb,
   color: var(--light-font);
 }
 .main-info-sub__wrapper {
-  display: flex;  
+  display: flex;
   flex-direction: column;
 }
 .main-info-sub-two {
@@ -173,12 +168,12 @@ body::-webkit-scrollbar-thumb,
   grid-template-rows: 1fr;
   gap: 2.3rem 1.7rem;
 
-  grid-template-areas: 
-  "technologies technologies"
-  "work work"
-  "education courses"
-  "personalia personalia"
-  "bookshelf bookshelf";
+  grid-template-areas:
+    "technologies technologies"
+    "work work"
+    "education courses"
+    "personalia personalia"
+    "bookshelf bookshelf";
 }
 
 .work {
@@ -244,7 +239,7 @@ body::-webkit-scrollbar-thumb,
   padding-top: 1rem;
 }
 .techs-wrapper div {
-  margin-bottom: .7rem;
+  margin-bottom: 0.7rem;
 }
 .techs-wrapper span {
   font-weight: 700;
@@ -276,7 +271,7 @@ body::-webkit-scrollbar-thumb,
 /* bookshelf styles */
 #bookshelf {
   width: 100%;
-  margin-bottom: 2rem;  
+  margin-bottom: 2rem;
 }
 .bookshelf__container {
   grid-area: bookshelf;
@@ -312,13 +307,12 @@ body::-webkit-scrollbar-thumb,
 }
 
 @media (max-width: 1200px) {
-
   .resume-head {
     grid-template-columns: 2fr 8fr;
     grid-template-rows: 2fr;
-    grid-template-areas: 
+    grid-template-areas:
       "photo about"
-      "main-info main-info";    
+      "main-info main-info";
     padding: 2rem 0;
   }
 
@@ -326,14 +320,14 @@ body::-webkit-scrollbar-thumb,
     border-right: none;
     padding-right: 0;
   }
-  
+
   .main-info {
     padding-top: 1.5rem;
     padding-left: 0;
     border-top: 1px solid white;
   }
   .main-info-sub__wrapper {
-    display: flex;  
+    display: flex;
     flex-direction: row;
   }
   .main-info-sub-two {
@@ -346,7 +340,7 @@ body::-webkit-scrollbar-thumb,
     margin-top: 0;
   }
   .main-info p {
-    margin-bottom: .7rem;
+    margin-bottom: 0.7rem;
   }
 
   .resume-head {
@@ -358,12 +352,12 @@ body::-webkit-scrollbar-thumb,
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 2rem 1rem;
-  
-    grid-template-areas: 
-    "work technologies"
-    "work personalia"
-    "education courses"
-    "bookshelf bookshelf";
+
+    grid-template-areas:
+      "work technologies"
+      "work personalia"
+      "education courses"
+      "bookshelf bookshelf";
   }
 
   .work-items__wrapper {
@@ -371,8 +365,9 @@ body::-webkit-scrollbar-thumb,
     justify-content: start;
     padding-left: 2.7rem;
   }
-  .work-item p, h3 {
-    margin-bottom: .3rem;
+  .work-item p,
+  h3 {
+    margin-bottom: 0.3rem;
   }
   .work-item p:last-child {
     margin-bottom: 1.7rem;
@@ -421,7 +416,7 @@ body::-webkit-scrollbar-thumb,
   .resume-head {
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
-    grid-template-areas: 
+    grid-template-areas:
       "photo"
       "about"
       "main-info";
@@ -439,14 +434,14 @@ body::-webkit-scrollbar-thumb,
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 1.7rem;
-  
-    grid-template-areas: 
-    "technologies"
-    "work"
-    "education"
-    "courses"
-    "personalia"
-    "bookshelf";
+
+    grid-template-areas:
+      "technologies"
+      "work"
+      "education"
+      "courses"
+      "personalia"
+      "bookshelf";
   }
 }
 
@@ -456,7 +451,7 @@ body::-webkit-scrollbar-thumb,
   }
 
   .main-info-sub__wrapper {
-    display: flex;  
+    display: flex;
     flex-direction: column;
   }
   .main-info-sub-two {
