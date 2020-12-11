@@ -1,11 +1,13 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
+import { AboutInterface } from '../../../data/profile';
 import './About.css';
 
-export default function HeaderImage ({ name, description }: {name: string, description: ReactElement}) {
+export default function About (props: AboutInterface) {
+  const { name, description } = props;
   return (
     <section className="About">
-          <h1>{name}</h1>
-          <p>{description}</p>
-        </section>
+      <h1>{name}</h1>
+      <>{description}</>
+    </section>
   );
 };

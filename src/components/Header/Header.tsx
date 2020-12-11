@@ -1,7 +1,9 @@
 import React from 'react';
-import HeaderImage from './HeaderImage/HeaderImage';
+import { ABOUT, MAIN_INFO as mainInfo } from '../../data/profile';
 import About from './About/About';
-import { ABOUT, MAIN_INFO } from '../../data/profile';
+import HeaderImage from './HeaderImage/HeaderImage';
+import MainInfo from './MainInfo/MainInfo';
+import './Header.css';
 
 export default function Header() {
 
@@ -12,6 +14,7 @@ export default function Header() {
       <div className="container Header">
         <HeaderImage />
         <About name={name} description={description}/>
+        <MainInfo mainInfo={mainInfo}/>
       </div>
     </header>
   );

@@ -1,0 +1,17 @@
+.about {
+  grid-area: about;
+  border-right: 1px solid white;
+  padding-right: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .about {
+    border-right: none;
+    padding-right: 0;
+  }
+}
+@media (max-width: 660px) {
+  .about h1 {
+    text-align: center;
+  }
+}

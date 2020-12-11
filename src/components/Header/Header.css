@@ -19,3 +19,46 @@
 .Header a:hover {
   color: #c8eaf8;
 }
+
+@media (max-width: 1600px) {
+  .Header {
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "photo about main-info";
+  }
+}
+
+@media (max-width: 1200px) {
+  .Header {
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 2fr;
+    grid-template-areas:
+      "photo about"
+      "main-info main-info";
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .Header {
+    grid-template-columns: 3fr 7fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .Header {
+    grid-template-columns: 2fr 8fr;
+    gap: 1rem 2rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .Header {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas:
+      "photo"
+      "about"
+      "main-info";
+  }
+}

@@ -13,3 +13,10 @@
   width: 100%;
   height: auto;
 }
+
+@media (max-width: 660px) {
+  .Header-image {
+    display: flex;
+    justify-content: center;
+  }
+}
