@@ -1,12 +1,11 @@
 import React from "react";
 
-import Aux from "../../hoc/Auxiliary";
-import Book from "../../components/Book/Book";
-import BookOnHover from "../../components/BookOnHover/BookOnHover";
-import BookClicked from "../../components/BookClicked/BookClicked";
+import Book from "./Book/Book";
+import BookOnHover from "./BookOnHover/BookOnHover";
+import BookClicked from "./BookClicked/BookClicked";
 
 import "./BookShelf.css";
-import "../../components/Book/Book.css";
+import "./Book/Book.css";
 import myLibrary from "../../data/books.json";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -156,7 +155,11 @@ class BookShelf extends React.Component {
     const currentBooks = this.books.slice(bookStart, bookEnd);
     const booksMissingOnShelf = booksToShow - booksToShowLength;
     return (
-      <Aux>
+      <section id="bookshelf__container" className="container bookshelf__container">
+        <h2>My interests</h2>
+        <p>
+          No words can better describe my intersts then books I've read. Browse through and check out the details of each by clicking in it.
+        </p>
         <div
           className="BookShelf"
           style={this.additionalPadding(
@@ -221,7 +224,7 @@ class BookShelf extends React.Component {
             clicked={this.handleBookClicked}
           />
         ) : null}
-      </Aux>
+      </section>
     );
   }
 }

@@ -1,10 +1,7 @@
 import React from 'react';
-import Aux from '../../hoc/Auxiliary';
-
-import './BookClicked.css';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faQuoteRight, faBook, faBookReader, faCalendar } from '@fortawesome/free-solid-svg-icons';
+import './BookClicked.css';
 
 const BookClicked = ({ book, clicked }) => {
   
@@ -60,10 +57,10 @@ const BookClicked = ({ book, clicked }) => {
       </div>
       <div className="MoreDetails">
         { book.impressions_en.length > 0 ?
-          (<Aux>
+          (<>
             <FontAwesomeIcon icon={faQuoteRight} />
             <p>{book.impressions_en}</p>
-          </Aux>)
+          </>)
           :
           null
         }
