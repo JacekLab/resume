@@ -1,10 +1,13 @@
 import React from 'react';
-
-import BookShelf from './containers/BookShelf/BookShelf';
+import Header from './components/Header/Header';
+import SectionContainer from './components/SectionContainer/Section-container';
+import BookShelf from './components/BookShelf/BookShelf';
 
 function App() {
   return (
     <div className="AppContainer">
+      <Header />
+      <SectionContainer />
       <BookShelf />
     </div>
   );
