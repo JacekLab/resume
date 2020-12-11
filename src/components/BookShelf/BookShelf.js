@@ -158,7 +158,7 @@ class BookShelf extends React.Component {
       <section id="bookshelf__container" className="container bookshelf__container">
         <h2>My interests</h2>
         <p>
-          No words can better describe my intersts then books I've read. Browse through and check out the details of each by clicking in it.
+          Instead of describing my intersts I could just show you the books I read. You can click on each to check out the details.
         </p>
         <div
           className="BookShelf"
