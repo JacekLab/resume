@@ -12,7 +12,7 @@
   line-height: 1.5;
 }
 
-.Book-clicked__img__wrapper {
+.Book-clicked__img {
   display: flex;
   justify-content: flex-start;
 }
@@ -44,22 +44,20 @@
   background-color: transparent;
 }
 
-.Book-clicked__img__wrapper {
+.Book-clicked__img {
   height: 10rem;
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
   border: 1px solid rgb(220, 220, 220);
   margin-right: 2rem;
 }
 
-.Book-clicked__img__wrapper > img {
+.Book-clicked__img > img {
   height: 100%;
   width: auto;
 }
 
 .Book-clicked__more-details {
   margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
 }
 
 @media (max-width: 660px) {

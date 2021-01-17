@@ -109,6 +109,10 @@ body::-webkit-scrollbar-thumb,
   margin: 0 auto;
 }
 
+.flex {
+  display: flex;
+}
+
 /* bookshelf styles */
 #bookshelf {
   width: 100%;

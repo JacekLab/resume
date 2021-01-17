@@ -30,7 +30,7 @@ const BookClicked = ({ book, handleClose }: BookClickedProps): JSX.Element => {
 
   return (
     <div className="Book-clicked" id="Book-clicked">
-      <div className="Book-clicked__img__wrapper">
+      <div className="flex">
         <div className="Book-clicked__img">
           <img
             src={`assets/book-covers/${book.cover}`}
