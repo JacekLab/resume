@@ -1,86 +1,78 @@
-.BookClicked {
+.Book-clicked {
   font-size: 1rem;
   padding: 1.5rem;
   margin: 2rem auto 1rem;
-  height: 300px;
-  max-height: 300px;
-  overflow-y: auto;
   background-color: white;
   border: 1px solid var(--light-grey);
-  box-shadow: -.3rem .3rem var(--light-grey);
+  box-shadow: -0.3rem 0.3rem var(--light-grey);
 }
 
-.BookClicked p {
+.Book-clicked p {
   margin-bottom: 0;
   line-height: 1.5;
 }
 
-.BookImgAndMainDetails__wrapper {
+.Book-clicked__img__wrapper {
   display: flex;
   justify-content: flex-start;
 }
 
-.CloseBook {
+.Book-clicked__close-btn {
   position: absolute;
   display: initial;
   top: -1rem;
   right: -1rem;
-  opacity: .7;
+  opacity: 0.7;
 }
 
-.MainDetails {
+.Book-clicked__main-details {
   position: relative;
   width: 100%;
 }
 
-.MainDetails > p > span,
-.MoreDetails > p > span {
+.Book-clicked__main-details > p > span,
+.Book-clicked__more-details > p > span {
   color: black;
   background-color: var(--light-font);
 }
 
-.MainDetails > p:last-child {
-  margin-top: .7rem;
+.Book-clicked__main-details > p:last-child {
+  margin-top: 0.7rem;
 }
 
-.MainDetails > p:last-child > span {
+.Book-clicked__main-details > p:last-child > span {
   background-color: transparent;
 }
 
-.BookImgWrapper {
+.Book-clicked__img__wrapper {
   height: 10rem;
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
   border: 1px solid rgb(220, 220, 220);
   margin-right: 2rem;
 }
 
-.BookImgWrapper > img {
+.Book-clicked__img__wrapper > img {
   height: 100%;
   width: auto;
 }
 
-.MoreDetails {
+.Book-clicked__more-details {
   margin-top: 2rem;
-}
-
-.MoreDetailsSetOne {
   display: flex;
   justify-content: space-between;
 }
 
 @media (max-width: 660px) {
-  .BookClicked {
+  .Book-clicked {
     position: absolute;
     top: 0;
     z-index: 2000;
+    margin-top: 0;
   }
-  .BookImgWrapper {
+  .Book-clicked__img {
     height: 9rem;
   }
-  .MoreDetails {
+  .Book-clicked__more-details {
     margin-top: 1rem;
-  }
-  .BookClicked {
-    margin-top: 0;
   }
 }
