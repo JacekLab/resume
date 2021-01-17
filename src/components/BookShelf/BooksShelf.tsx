@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BookInterface, BookSize } from "../../types/index";
+import { BookInterface, BookSize, HandleBookFunc } from "../../types/index";
 
 import Book from "./Book/Book";
 import BookOnHover from "./BookOnHover/BookOnHover";
@@ -24,7 +24,7 @@ interface CurrentBooks {
 const BookShelf: React.FC = () => {
   const [currentBooks, setCurrentBooks] = useState<CurrentBooks>({
     bookStart: 0,
-    bookEnd: 5,
+    bookEnd: 10,
     totalPages: 0,
     toShow: null,
     toShowCount: null,
@@ -47,13 +47,10 @@ const BookShelf: React.FC = () => {
     setCurrentBooks((prev) => ({ ...prev, totalPages: totalPagesOnInit }));
   }, []);
 
-  interface HandleBookFunc {
-    (book: BookInterface, stateToUpdate: "click" | "hover"): void;
-  }
   const handleBook: HandleBookFunc = (book, stateToUpdate) => {
     if (stateToUpdate === "click") {
       setBookClicked(book);
-      window.scrollTo({ top: 1000, left: 0, behavior: "smooth" });
+      window.scrollTo({ top: 2000, left: 0, behavior: "smooth" });
     } else {
       setBookHovered(book);
     }
@@ -62,12 +59,12 @@ const BookShelf: React.FC = () => {
   const getHeight = (bookSize: BookSize): string => {
     switch (bookSize) {
       case "L":
-        return "13rem";
+        return "16rem";
       case "M":
-        return "12rem";
+        return "14rem";
       case "S":
       default:
-        return "11rem";
+        return "12rem";
     }
   };
 
@@ -95,8 +92,8 @@ const BookShelf: React.FC = () => {
             />
           );
         })}
-        <div className="BookShelfBottom" />
       </div>
+      <div className="BookShelfBottom" />
       {bookClicked && (
         <BookClicked book={bookClicked} handleClose={() => setBookClicked(undefined)} />
       )}
